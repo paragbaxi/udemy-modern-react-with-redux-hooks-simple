@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ResourceList from './ResourceList';
+import UserList from './UserList';
 
 // function level state using hooks
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
                     Todos
                 </button>
             </div>
+            <UserList resource={'users'} />
             <ResourceList resource={resource} />
         </div>
     );
